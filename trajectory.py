@@ -41,3 +41,5 @@ if __name__ == "__main__":
     plt.plot(g_solver.t, u)
     plt.savefig("u_.jpg")
     plt.show()
+
+print(g_solver.y)

@@ -25,7 +25,6 @@ ls = np.linspace(T, 0, 200)
 solve_ivp_c = solve_ivp(fun, t_span=(T, 0), y0=[kappa, 0], t_eval=ls,
                         rtol=1e-10, atol=1e-12)
 
-
 # sanity check 
 print(np.max(np.abs(solve_ivp_c.y[0] - solver.y[0])))
 
